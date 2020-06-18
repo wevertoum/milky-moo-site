@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
       </h1>
       {
         itensMenu.map((e) => (
-          <h1 className="menu-navigation">
+          <h1 key={e} className="menu-navigation">
             <Link
               to="/"
               style={{

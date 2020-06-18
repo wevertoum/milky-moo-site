@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby'
 import '../styles/global.scss'
 import 'normalize.css'
@@ -10,19 +10,25 @@ import Loading from '../components/loading';
 import Modal from '../components/modal'
 
 const IndexPage = () => {
-  const [show, setShow] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    setShowModal(true)
+    setTimeout(() => { setShowModal(false) }, 3000);
+  }, [])
 
   return (
     <Layout>
       <SEO title="Home" />
       <section>
-        <Loading visible />
         <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-          <button type="button" onClick={() => setShow(true)}>
+          <button type="button" onClick={() => setShowModal(true)}>
             abrir formulario
           </button>
         </div>
-        <Modal visible={show} />
+        <Modal visible={showModal} onClose={() => setShowModal(false)} btn={false}>
+          <Loading />
+        </Modal>
       </section>
       <section>
 

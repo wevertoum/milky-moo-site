@@ -2,13 +2,23 @@ import React from 'react'
 import './modal.scss';
 import PropTypes from 'prop-types';
 
-const Modal = ({ visible }) => {
+const Modal = ({
+  visible, onClose, children, btn,
+}) => {
   if (visible) {
     return (
       <div className="modal-main">
         <div className="modal-content">
-          <p>Some text in the Modal..</p>
+          {children}
         </div>
+
+        {
+          btn && (
+            <button type="button" onClick={onClose}>
+              fechar
+            </button>
+          )
+        }
       </div>
     )
   } return <></>
@@ -16,5 +26,8 @@ const Modal = ({ visible }) => {
 
 Modal.propTypes = {
   visible: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+  btn: PropTypes.bool.isRequired,
 };
 export default Modal

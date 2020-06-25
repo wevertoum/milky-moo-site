@@ -44,7 +44,7 @@ somewhere else.
 
 
 
-If you have any questions about the License, feel free to contact us.
+If you have any questions sobrenos the License, feel free to contact us.
 
 
 -----------------------------------------------------------------------------------------------------

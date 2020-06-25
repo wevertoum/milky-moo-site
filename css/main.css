@@ -34,7 +34,7 @@
  *    ## hero scroll
  *    ## animate intro content
  *    ## animations
- *  # about section
+ *  # sobrenos section
  *    ## career position
  *  # services section
  *    ## services list
@@ -49,7 +49,12 @@
  *
  * =================================================================== */
 
+/* custom fonts  */
 
+@font-face {
+  font-family: "Holyfat";
+  src: url("../fonts/Holyfat.ttf");
+}
 
 
 /* ===================================================================
@@ -137,13 +142,11 @@ a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.h1,
 .h2,
 .h3,
 .h4,
@@ -156,6 +159,11 @@ h6,
   -webkit-font-variant-ligatures: common-ligatures;
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
+}
+
+.title-main {
+  font-family: "Holyfat";
+  font-size: 7.6rem;
 }
 
 h1,
@@ -180,7 +188,7 @@ h4,
   .h3,
   h4,
   .h4 {
-    margin-top: 5.6rem;
+    margin-top: 7rem;
   }
 
 }
@@ -609,7 +617,7 @@ form,
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0b0a15;
+  background: #ea95a8;
   z-index: 500;
   height: 100vh;
   width: 100%;
@@ -883,7 +891,7 @@ select {
 }
 
 textarea {
-  min-height: 25.6rem;
+  min-height: 27rem;
 }
 
 input[type="email"]:focus,
@@ -994,7 +1002,7 @@ input[type="button"] {
   text-transform: uppercase;
   letter-spacing: .6rem;
   height: 6rem;
-  line-height: 5.6rem;
+  line-height: 7rem;
   padding: 0 3.2rem;
   margin: 0 .4rem 1.6rem 0;
   color: #000000;
@@ -1062,7 +1070,7 @@ button.h-full-width {
 
 .btn--small,
 button.btn--small {
-  height: 5.6rem !important;
+  height: 7rem !important;
   line-height: 5.2rem !important;
 }
 
@@ -1690,8 +1698,7 @@ input::-moz-focus-inner {
 }
 
 .s-header.sticky .header-logo img {
-  width: 35px;
-  height: 38px;
+  width: 50px;
 }
 
 .s-header.sticky .header-content .btn {
@@ -1738,8 +1745,7 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 41px;
-  height: 44px;
+  width: 50px;
   vertical-align: bottom;
 }
 
@@ -1753,9 +1759,10 @@ input::-moz-focus-inner {
 
 .header-nav {
   list-style: none;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Holyfat", sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
   line-height: 6rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
@@ -1923,8 +1930,7 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 37px;
-    height: 40px;
+    width: 50px;
   }
 
   .header-content {
@@ -2344,11 +2350,11 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1800px) {
   .hero-content h1 {
-    font-size: 6.3rem;
+    font-size: 7rem;
   }
 
   .hero-content h1::before {
-    width: 6rem;
+    width: 7rem;
     left: -8.8rem;
   }
 
@@ -2374,7 +2380,7 @@ html.no-csstransitions .hero-content {
   }
 
   .hero-content h1 {
-    font-size: 6rem;
+    font-size: 7rem;
     padding-top: 3.2rem;
   }
 
@@ -2404,7 +2410,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:1000px) {
   .hero-content h1 {
-    font-size: 5.6rem;
+    font-size: 7rem;
   }
 
   .hero-social {
@@ -2477,27 +2483,27 @@ html.no-csstransitions .hero-content {
 
 
 /* ===================================================================
- * # about section
+ * # sobrenos section
  *
  * ------------------------------------------------------------------- */
-.s-about {
+.s-sobrenos {
   padding-bottom: 16rem;
   background-color: #ffffff;
   position: relative;
 }
 
-.s-about .right-vert-line {
+.s-sobrenos .right-vert-line {
   background-color: #302c59;
 }
 
-.s-about__section--profile {
+.s-sobrenos__section--profile {
   padding-top: 28rem;
   padding-bottom: 4rem;
   min-height: 108rem;
   position: relative;
 }
 
-.s-about__section--profile::before {
+.s-sobrenos__section--profile::before {
   content: "";
   display: block;
   background-color: #ebb940;
@@ -2508,15 +2514,20 @@ html.no-csstransitions .hero-content {
   left: calc(50% + 12vw);
 }
 
-.s-about__section--profile .row {
+.s-sobrenos__section--profile .row {
   position: relative;
 }
 
-.s-about__section--profile .profile-pic {
+.s-sobrenos__section--profile .profile-pic {
   width: 24vw;
   position: absolute;
   top: 8rem;
   left: calc(50% + 80px);
+}
+
+.s-sobrenos__section--profile .profile-pic>img {
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.3);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2574,14 +2585,14 @@ html.no-csstransitions .hero-content {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * about
+ * sobrenos
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
-  .s-about__section--profile::before {
+  .s-sobrenos__section--profile::before {
     left: 75%;
   }
 
-  .s-about__section--profile .profile-pic {
+  .s-sobrenos__section--profile .profile-pic {
     width: 26vw;
     right: 0;
     left: auto;
@@ -2609,14 +2620,14 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:800px) {
-  .s-about__section--profile {
+  .s-sobrenos__section--profile {
     padding-top: 20rem;
     padding-bottom: 0;
     min-height: 0;
   }
 
-  .s-about__section--profile::before,
-  .s-about__section--profile .profile-pic {
+  .s-sobrenos__section--profile::before,
+  .s-sobrenos__section--profile .profile-pic {
     display: none;
   }
 
@@ -3129,7 +3140,7 @@ html.no-csstransitions .hero-content {
   display: block;
   list-style: none;
   padding: 0;
-  margin: 5.6rem 0 0 0;
+  margin: 7rem 0 0 0;
   text-align: center;
 }
 

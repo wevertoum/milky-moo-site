@@ -2459,7 +2459,6 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-sobrenos {
-  padding-bottom: 16rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2837,17 +2836,17 @@ html.no-csstransitions .hero-content {
 
 
 /* ===================================================================
- * # portfolio
+ * # produtos
  *
  * ------------------------------------------------------------------- */
-.s-portfolio {
+.s-produtos {
   padding-top: 24rem;
   padding-bottom: 0;
   background-color: #ffffff;
   position: relative;
 }
 
-.s-portfolio::before {
+.s-produtos::before {
   content: "";
   display: block;
   background-color: #764384;
@@ -2859,9 +2858,9 @@ html.no-csstransitions .hero-content {
 }
 
 /* ------------------------------------------------------------------- 
- * ## portfolio list
+ * ## produtos list
  * ------------------------------------------------------------------- */
-.s-portfolio__list {
+.s-produtos__list {
   max-width: 1240px;
 }
 
@@ -2925,7 +2924,7 @@ html.no-csstransitions .hero-content {
   vertical-align: bottom;
 }
 
-/* portfolio info
+/* produtos info
  *---------------------------------------------- */
 .folio-item__info {
   z-index: 2;
@@ -2954,45 +2953,6 @@ html.no-csstransitions .hero-content {
   font-family: "Gothic A1", sans-serif;
   font-size: 1.4rem;
   margin-bottom: 0;
-}
-
-.folio-item__project-link {
-  z-index: 2;
-  display: block;
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: #000000;
-  background-color: #ffffff;
-  padding: .6rem 1.2rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  position: absolute;
-  bottom: 3.9rem;
-  left: 3rem;
-}
-
-.folio-item__project-link::before {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 3rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  top: 50%;
-  left: -3rem;
-}
-
-.folio-item__project-link:hover,
-.folio-item__project-link:focus,
-.folio-item__project-link:active {
-  background-color: #764384;
-  color: #ffffff;
 }
 
 /* on hover
@@ -3025,10 +2985,10 @@ html.no-csstransitions .hero-content {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * portfolio
+ * produtos
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
-  .s-portfolio::before {
+  .s-produtos::before {
     display: none;
   }
 
@@ -3047,7 +3007,7 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:800px) {
-  .s-portfolio {
+  .s-produtos {
     padding-top: 20rem;
   }
 
@@ -3083,10 +3043,12 @@ html.no-csstransitions .hero-content {
 
 
 /* ===================================================================
- * # testimonials
+ * # lojas
  *
  * ------------------------------------------------------------------- */
-.s-testimonials {
+.s-lojas,
+.s-franquias,
+.s-contato {
   padding-top: 14.4rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
@@ -3197,7 +3159,7 @@ html.no-csstransitions .hero-content {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * testimonials
+ * lojas
  * ------------------------------------------------------------------- */
 @media screen and (max-width:800px) {
   .testimonial-slider__slide {
@@ -3277,6 +3239,11 @@ html.no-csstransitions .hero-content {
  * # footer
  *
  * ------------------------------------------------------------------- */
+
+.iframe-google {
+  border-radius: 32px;
+}
+
 .s-footer {
   padding-top: 24rem;
   padding-bottom: 8rem;
@@ -3465,7 +3432,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:800px) {
   .s-footer {
-    padding-top: 20rem;
+    padding-top: 10rem;
   }
 
   .ss-copyright {

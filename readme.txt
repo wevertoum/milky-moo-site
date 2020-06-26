@@ -4,7 +4,7 @@ DESCRIPTION:
 
 ETHOS is a modern and elegant one-page free resume website template. A perfect tool that would 
 help you craft a personal website where you can advertise yourself showcasing your skills, 
-talents, portfolio, and work experiences. It provides you the necessary website elements 
+talents, produtos, and work experiences. It provides you the necessary website elements 
 and features for creating an impressive and beautiful online resume that would capture 
 everyone's attention.
 

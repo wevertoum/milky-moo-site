@@ -646,7 +646,8 @@ form,
   height: 60px;
   display: inline-block;
   -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-animation: rotate-center 8s linear both;
+  animation: rotate-center 8s linear both
 }
 
 #loader>div {

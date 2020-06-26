@@ -42,6 +42,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
 /* ===================================================================
  * # custom block grid STACK breakpoints
  *
@@ -619,12 +643,14 @@ form,
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 6px;
-  height: 6px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   display: inline-block;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
+  -webkit-animation: rotate-center 8s linear both;
+  animation: rotate-center 8s linear both
 }
 
 #loader>div {
@@ -696,50 +722,11 @@ form,
 
 /* dots fade */
 .dots-fade>div {
-  -webkit-animation: dots-fade 1.6s infinite ease;
-  animation: dots-fade 1.6s infinite ease;
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-.dots-fade>div:nth-of-type(1) {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.dots-fade>div:nth-of-type(3) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-@-webkit-keyframes dots-fade {
-  0% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 0.2;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-}
-
-@keyframes dots-fade {
-  0% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 0.2;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
+.dots-fade img {
+  height: 100%;
 }
 
 /* dots pulse */
@@ -2511,7 +2498,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-sobrenos__section--profile .profile-pic>img {
-  border-radius: 10px;
+  border-radius: 32px;
   box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
 }
 

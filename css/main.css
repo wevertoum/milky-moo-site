@@ -641,11 +641,14 @@ form,
 
 #loader {
   position: absolute;
-  top: 50%;
-  left: 47%;
+  left: 45%;
+  top: 45%;
+  width: 60px;
   height: 60px;
+  padding: 0;
   display: inline-block;
   -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   -webkit-animation: rotate-center 8s linear both;
   animation: rotate-center 8s linear both
 }

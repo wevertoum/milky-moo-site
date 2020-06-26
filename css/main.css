@@ -1,61 +1,46 @@
-/* =================================================================== 
- *  Ethos Main Stylesheet
- *  Template Ver. 1.0.0
- *  11-05-2019
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # custom block grid STACK breakpoints
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image 
- *    ## tables
- *    ## Spacing
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## additional typo styles 
- *    ## skillbars
- *    ## alert box 
- *  # Common and Reusable Styles
- *  # site header
- *    ## header logo
- *    ## main navigation
- *    ## mobile menu toggle
- *    ## download resume button
- *  # hero
- *    ## hero social
- *    ## hero scroll
- *    ## animate intro content
- *    ## animations
- *  # sobrenos section
- *    ## career position
- *  # services section
- *    ## services list
- *  # portfolio
- *    ## portfolio list
- *  # testimonials
- *  # CTA
- *  # footer
- *    ## contact block
- *    ## copyright
- *    ## go top
- *
- * =================================================================== */
-
-/* custom fonts  */
-
 @font-face {
   font-family: "Holyfat";
   src: url("../fonts/Holyfat.ttf");
 }
 
+@font-face {
+  font-family: "Blugie";
+  src: url("../fonts/Blugie.ttf");
+}
+
+/* lemonMilk family */
+
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LemonMilk/LemonMilk.otf");
+}
+
+@font-face {
+  font-family: "LemonMilkbold";
+  src: url("../fonts/LemonMilk/LemonMilkbold.otf");
+}
+
+@font-face {
+  font-family: "LemonMilkbolditalic";
+  src: url("../fonts/LemonMilk/LemonMilkbolditalic.otf");
+}
+
+@font-face {
+  font-family: "LemonMilkitalic";
+  src: url("../fonts/LemonMilk/LemonMilkitalic.otf");
+}
+
+@font-face {
+  font-family: "LemonMilklight";
+  src: url("../fonts/LemonMilk/LemonMilklight.otf");
+}
+
+@font-face {
+  font-family: "LemonMilklightitalic";
+  src: url("../fonts/LemonMilk/LemonMilklightitalic.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 /* ===================================================================
  * # custom block grid STACK breakpoints
@@ -162,7 +147,8 @@ h6,
 }
 
 .title-main {
-  font-family: "Holyfat";
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600 !important;
   font-size: 7.6rem;
 }
 
@@ -996,7 +982,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -1091,6 +1077,7 @@ button.btn--stroke {
   background: transparent !important;
   border: 0.2rem solid #000000;
   color: #000000;
+  border-radius: 16px;
 }
 
 .btn--stroke:hover,
@@ -1551,7 +1538,7 @@ input::-moz-focus-inner {
 
 .section-intro::before {
   content: attr(data-num);
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 30rem;
   line-height: 1;
@@ -1759,9 +1746,9 @@ input::-moz-focus-inner {
 
 .header-nav {
   list-style: none;
-  font-family: "Holyfat", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   letter-spacing: 1px;
   line-height: 6rem;
   padding-top: 1.4rem;
@@ -1923,7 +1910,7 @@ input::-moz-focus-inner {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1175px) {
   .s-header {
     top: 2rem;
     height: 8rem;
@@ -2068,8 +2055,6 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #764384), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, #764384 54%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.70;
 }
 
@@ -2506,7 +2491,7 @@ html.no-csstransitions .hero-content {
 .s-sobrenos__section--profile::before {
   content: "";
   display: block;
-  background-color: #ebb940;
+  background-color: #8bdfb3;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2527,7 +2512,7 @@ html.no-csstransitions .hero-content {
 
 .s-sobrenos__section--profile .profile-pic>img {
   border-radius: 10px;
-  box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2730,7 +2715,7 @@ html.no-csstransitions .hero-content {
 .services-list__item-header h5::before {
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: .5em;
   line-height: 1;

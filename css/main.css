@@ -2452,6 +2452,12 @@ html.no-csstransitions .hero-content {
 
 }
 
+@media screen and (max-width:1200px) {
+  .image-anim-container {
+    display: none;
+  }
+}
+
 #image-animada {
   position: absolute;
   left: 20px;
@@ -2674,7 +2680,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-services {
- padding-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 20rem;
   background-color: #1d1b37;
   position: relative;
@@ -2685,7 +2691,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-services__leftcol {
-  padding-bottom: 12rem;
+  padding-bottom: 0rem;
 }
 
 .s-services__leftcol p.lead {
@@ -2885,7 +2891,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
- padding-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 0;
   background-color: #ffffff;
   position: relative;
@@ -3290,7 +3296,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer {
- padding-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 8rem;
   background-color: #0b0a15;
   position: relative;

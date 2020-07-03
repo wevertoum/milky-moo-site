@@ -2681,7 +2681,7 @@ html.no-csstransitions .hero-content {
 .s-services {
   padding-top: 10rem;
   padding-bottom: 20rem;
-  background-color: #1d1b37;
+  background-image: linear-gradient(to bottom right, #8bdfb3, #5fbcad);
   position: relative;
 }
 
@@ -3339,6 +3339,7 @@ html.no-csstransitions .hero-content {
 
 .footer-contact-block a {
   color: #ffffff;
+  font-size: 25px;
 }
 
 .footer-contact-block a:hover,

@@ -369,9 +369,19 @@ object {
 	height: 410px;
 }
 
+.image-produtos {
+	height: 300px !important;
+}
+
+@media screen and (max-width:500px) {
+	.image-produtos {
+		height: 200px !important;
+	}
+}
+
 iframe {
-	height: 410px;
-	width: 380px;
+	height: 100%;
+	width: 100%;
 }
 
 /* ------------------------------------------------------------------- 

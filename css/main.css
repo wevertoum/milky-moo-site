@@ -1043,7 +1043,7 @@ button.h-full-width {
 
 .btn--small,
 button.btn--small {
-  height: 7rem !important;
+  height: 5rem !important;
   line-height: 5.2rem !important;
 }
 
@@ -1571,7 +1571,6 @@ input::-moz-focus-inner {
   .right-vert-line {
     right: 9rem;
   }
-
 }
 
 @media screen and (max-width:800px) {
@@ -2641,7 +2640,7 @@ html.no-csstransitions .hero-content {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1054px) {
   .s-sobrenos__section--profile {
     padding-top: 20rem;
     padding-bottom: 0;
@@ -2819,7 +2818,7 @@ html.no-csstransitions .hero-content {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .s-services__content .s-services__leftcol {
@@ -3291,8 +3290,12 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 
+.iframe-container {
+  height: 30vh;
+}
+
 .iframe-google {
-  border-radius: 32px;
+  border-radius: 16px;
 }
 
 .s-footer {

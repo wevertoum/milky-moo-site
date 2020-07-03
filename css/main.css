@@ -2452,6 +2452,50 @@ html.no-csstransitions .hero-content {
 
 }
 
+#image-animada {
+  position: absolute;
+  left: 20px;
+  height: 300px;
+}
+
+#anim-sobre {
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-animation: rotate-center 8s linear both;
+  animation: rotate-center 8s linear both
+}
+
+#anim-produtos {
+  position: absolute;
+  left: 20px;
+  height: 200px;
+  -webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+  animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate-reverse both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 
 /* ===================================================================
@@ -2459,6 +2503,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-sobrenos {
+  padding-bottom: 0rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2468,9 +2513,9 @@ html.no-csstransitions .hero-content {
 }
 
 .s-sobrenos__section--profile {
-  padding-top: 28rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
-  min-height: 108rem;
+  min-height: 80rem;
   position: relative;
 }
 
@@ -2498,7 +2543,7 @@ html.no-csstransitions .hero-content {
 
 .s-sobrenos__section--profile .profile-pic>img {
   border-radius: 32px;
-  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* ------------------------------------------------------------------- 
@@ -2629,7 +2674,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 24rem;
+ padding-top: 10rem;
   padding-bottom: 20rem;
   background-color: #1d1b37;
   position: relative;
@@ -2839,8 +2884,8 @@ html.no-csstransitions .hero-content {
  * # produtos
  *
  * ------------------------------------------------------------------- */
-.s-produtos {
-  padding-top: 24rem;
+.s-portfolio {
+ padding-top: 10rem;
   padding-bottom: 0;
   background-color: #ffffff;
   position: relative;
@@ -3046,11 +3091,11 @@ html.no-csstransitions .hero-content {
  * # lojas
  *
  * ------------------------------------------------------------------- */
-.s-lojas,
+.s-testimonials,
 .s-franquias,
 .s-contato {
   padding-top: 14.4rem;
-  padding-bottom: 16rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 
@@ -3245,7 +3290,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer {
-  padding-top: 24rem;
+ padding-top: 10rem;
   padding-bottom: 8rem;
   background-color: #0b0a15;
   position: relative;

@@ -365,9 +365,13 @@ body {
 svg,
 img,
 video embed,
-iframe,
 object {
-	height: 500px;
+	height: 410px;
+}
+
+iframe {
+	height: 410px;
+	width: 380px;
 }
 
 /* ------------------------------------------------------------------- 

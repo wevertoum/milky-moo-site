@@ -113,7 +113,6 @@ body {
 }
 
 body {
-  background: #0b0a15;
   font-family: "Martel", serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -2143,7 +2142,7 @@ input::-moz-focus-inner {
   display: block;
   width: 2px;
   height: 7rem;
-  background-color: white;
+  background-color: #302c59;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
   position: absolute;
@@ -2519,7 +2518,7 @@ html.no-csstransitions .hero-content {
 
 .s-sobrenos__section--profile {
   padding-top: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
   min-height: 80rem;
   position: relative;
 }
@@ -2672,15 +2671,24 @@ html.no-csstransitions .hero-content {
 
 }
 
-
+.s-portfolio {
+  padding-top: 10rem;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  position: relative;
+}
 
 /* ===================================================================
  * # services section
  *
  * ------------------------------------------------------------------- */
+.gallery-content {
+  width: 100% !important;
+}
+
 .s-services {
   padding-top: 10rem;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
   background-image: linear-gradient(to bottom right, #8bdfb3, #5fbcad);
   position: relative;
 }
@@ -2695,17 +2703,6 @@ html.no-csstransitions .hero-content {
 
 .s-services__leftcol p.lead {
   max-width: 90%;
-}
-
-.s-services .vert-line {
-  width: 2px;
-  height: 20rem;
-  background-color: #764384;
-  -webkit-transform: translate3d(50%, 0, 0);
-  transform: translate3d(50%, 0, 0);
-  position: absolute;
-  bottom: -20rem;
-  left: 20px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2883,37 +2880,9 @@ html.no-csstransitions .hero-content {
 
 }
 
-
-
-/* ===================================================================
- * # produtos
- *
- * ------------------------------------------------------------------- */
-.s-portfolio {
-  padding-top: 10rem;
-  padding-bottom: 0;
-  background-color: #ffffff;
-  position: relative;
-}
-
-.s-produtos::before {
-  content: "";
-  display: block;
-  background-color: #764384;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-}
-
 /* ------------------------------------------------------------------- 
  * ## produtos list
  * ------------------------------------------------------------------- */
-.s-produtos__list {
-  max-width: 1240px;
-}
-
 .folio-item {
   position: relative;
   overflow: hidden;
@@ -2972,6 +2941,14 @@ html.no-csstransitions .hero-content {
 
 .folio-item__thumb img {
   vertical-align: bottom;
+  width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+  .folio-item__thumb img {
+    vertical-align: bottom;
+    width: 100vw;
+  }
 }
 
 /* produtos info
@@ -3093,7 +3070,7 @@ html.no-csstransitions .hero-content {
 
 
 /* ===================================================================
- * # lojas
+ * # lojas / testimonials
  *
  * ------------------------------------------------------------------- */
 .s-testimonials,
@@ -3164,8 +3141,11 @@ html.no-csstransitions .hero-content {
 }
 
 .testimonial-slider__slide {
+  background-color: #f8c3d1;
+  border-radius: 16px;
   position: relative;
-  padding: 0 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
 }
 
 .testimonial-slider__author {

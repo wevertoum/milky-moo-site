@@ -363,15 +363,16 @@
                             srcset="images/assets/vaquinha@contact.png 1x, images/assets/vaquinha@contact.png 2x"
                             alt="">
                     </div>
-                    <form>
+                    <form action="https://formspree.io/mnqggkop" method="POST">
                         <div>
                             <label for="sampleInput">Seu melhor mail</label>
-                            <input class="h-full-width" type="email" placeholder="email@email.com" id="sampleInput">
+                            <input type="text" name="_replyto" class="h-full-width" placeholder="email@email.com"
+                                id="sampleInput">
                         </div>
                         <div>
                             <label for="sampleRecipientInput">Motivos para contato</label>
                             <div class="ss-custom-select">
-                                <select class="h-full-width" id="sampleRecipientInput">
+                                <select name="_motivo_contato" class="h-full-width" id="sampleRecipientInput">
                                     <option value="Quero ser um franqueado">Quero ser um franqueado</option>
                                     <option value="Gostaria de conhecer melhor a empresa">Gostaria de conhecer
                                         melhor a empresa</option>
@@ -381,11 +382,8 @@
                             </div>
                         </div>
                         <label for="exampleMessage">Deixe aqui sua mensagem</label>
-                        <textarea class="h-full-width" placeholder="Sua mensagem" id="exampleMessage"></textarea>
-                        <label class="h-add-bottom">
-                            <input type="checkbox">
-                            <span class="label-text">Enviar cópia pra mim</span>
-                        </label>
+                        <textarea name="mensagem" class="h-full-width" placeholder="Sua mensagem"
+                            id="exampleMessage"></textarea>
                         <input class="btn--primary h-full-width" type="submit" value="Enviar">
                     </form>
                 </div>

@@ -1060,6 +1060,7 @@ input[type="button"].btn--primary {
   background: #764384;
   border-color: #764384;
   color: #ffffff;
+  border-radius: 10px;
 }
 
 .btn.btn--primary:hover,
@@ -1595,35 +1596,10 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
-.right-vert-line {
-  width: 2px;
-  height: 20rem;
-  background-color: #302c59;
-  -webkit-transform: translate3d(50%, 0, 0);
-  transform: translate3d(50%, 0, 0);
-  position: absolute;
-  top: 0;
-  right: 11.2rem;
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * common and reusable styles
- * ------------------------------------------------------------------- */
-@media screen and (max-width:1200px) {
-  .right-vert-line {
-    right: 9rem;
-  }
-}
 
 @media screen and (max-width:800px) {
   .section-intro::before {
     font-size: 24rem;
-  }
-
-  .right-vert-line {
-    height: 16rem;
-    right: 6.2rem;
   }
 
 }
@@ -1639,11 +1615,6 @@ input::-moz-focus-inner {
 
   .section-intro::before {
     font-size: 22rem;
-  }
-
-  .right-vert-line {
-    height: 12rem;
-    right: 5rem;
   }
 
 }
@@ -2186,7 +2157,6 @@ input::-moz-focus-inner {
   display: block;
   width: 2px;
   height: 7rem;
-  background-color: #302c59;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
   position: absolute;
@@ -2587,11 +2557,9 @@ html.no-csstransitions .hero-content {
   position: relative;
 }
 
-.s-sobrenos .right-vert-line {
-  background-color: #302c59;
-}
-
 .s-sobrenos__section--profile {
+  margin-top: 5em;
+  margin-bottom: 5em;
   padding-top: 10rem;
   padding-bottom: 10rem;
   min-height: 80rem;
@@ -2601,12 +2569,17 @@ html.no-csstransitions .hero-content {
 .s-sobrenos__section--profile::before {
   content: "";
   display: block;
-  background-color: #8bdfb3;
+  background-image: linear-gradient(to bottom right, #8bdfb3, #358477);
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: calc(50% + 12vw);
+  -ms-transform: skewY(-10deg);
+  -webkit-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  border-radius: 30px;
+  z-index: 0;
 }
 
 .s-sobrenos__section--profile .row {
@@ -2760,14 +2733,25 @@ html.no-csstransitions .hero-content {
  * # services section
  *
  * ------------------------------------------------------------------- */
+.image-background-contain-services {
+  max-width: 100vw;
+  height: 100px;
+  bottom: 0;
+}
+
+.image-background-services {
+  width: 100%;
+}
+
 .gallery-content {
   width: 100% !important;
 }
 
 .s-services {
+  margin-top: 7em;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-image: linear-gradient(to bottom right, #8bdfb3, #5fbcad);
+  background-image: linear-gradient(#8bdfb3, #5fbcad);
   position: relative;
 }
 
@@ -3227,8 +3211,18 @@ html.no-csstransitions .hero-content {
   background-color: #f8c3d1;
   border-radius: 16px;
   position: relative;
-  padding: 10px 20px;
-  margin: 0 10px;
+  padding: 27px 13px;
+  margin: 8px 8px;
+
+  -webkit-border-radius: 20px;
+  -webkit-border-top-right-radius: 70px;
+  -webkit-border-bottom-left-radius: 70px;
+  -moz-border-radius: 20px;
+  -moz-border-radius-topright: 70px;
+  -moz-border-radius-bottomleft: 70px;
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
 }
 
 .testimonial-slider__author {
@@ -3352,6 +3346,15 @@ html.no-csstransitions .hero-content {
  * # footer
  *
  * ------------------------------------------------------------------- */
+.image-background-contain {
+  max-width: 100vw;
+  height: 100px;
+  bottom: 0;
+}
+
+.image-background {
+  width: 100%;
+}
 
 .iframe-container {
   height: 30vh;
@@ -3362,6 +3365,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer {
+  margin-top: 7em;
   padding-top: 10rem;
   padding-bottom: 8rem;
   background-color: #0b0a15;

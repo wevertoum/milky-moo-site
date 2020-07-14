@@ -1712,7 +1712,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-logo {
   z-index: 101;
-  display: inline-block;
+  display: none;
   margin: 0;
   padding: 0;
   -webkit-transition: all .5s;
@@ -1745,6 +1745,7 @@ input::-moz-focus-inner {
 }
 
 .header-nav {
+  margin-left: calc(17em - 230px) !important;
   list-style: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -1911,6 +1912,19 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width:1175px) {
+  .header-logo {
+    display: inline-block;
+  }
+
+  .logo-center {
+    display: none !important;
+  }
+
+  .header-nav {
+    margin-left: calc(0em - 0px) !important;
+    
+  }
+
   .s-header {
     top: 2rem;
     height: 8rem;
@@ -2558,8 +2572,8 @@ html.no-csstransitions .hero-content {
 }
 
 .s-sobrenos__section--profile {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 2em;
+  margin-bottom: -6em;
   padding-top: 10rem;
   padding-bottom: 10rem;
   min-height: 80rem;
@@ -2741,6 +2755,7 @@ html.no-csstransitions .hero-content {
 
 .image-background-services {
   width: 100%;
+  position: absolute !important;
 }
 
 .gallery-content {
@@ -3139,7 +3154,7 @@ html.no-csstransitions .hero-content {
 .s-testimonials,
 .s-franquias,
 .s-contato {
-  padding-top: 14.4rem;
+  padding-top: 8rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
@@ -3354,6 +3369,7 @@ html.no-csstransitions .hero-content {
 
 .image-background {
   width: 100%;
+  margin-top: 2em;
 }
 
 .iframe-container {
@@ -3365,7 +3381,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer {
-  margin-top: 7em;
+  margin-top: 8em;
   padding-top: 10rem;
   padding-bottom: 8rem;
   background-color: #0b0a15;

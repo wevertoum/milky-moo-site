@@ -113,7 +113,7 @@ body {
 }
 
 body {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: normal;
@@ -170,7 +170,7 @@ h6,
 }
 
 .title-main {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 600 !important;
   font-size: 7.6rem;
 }
@@ -306,13 +306,13 @@ b {
 
 em,
 i {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-style: italic;
 }
 
 strong,
 b {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 700;
 }
 
@@ -343,7 +343,7 @@ blockquote {
 }
 
 blockquote p {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 400;
   padding: 0;
   font-size: 2.8rem;
@@ -385,7 +385,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 700;
   font-variant: small-caps;
   text-transform: lowercase;
@@ -1012,7 +1012,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -1539,13 +1539,14 @@ input::-moz-focus-inner {
 }
 
 .subhead {
-  font-size: 1.4rem;
+  font-size: 3rem;
   line-height: 1.286;
   text-transform: uppercase;
   letter-spacing: .4em;
   margin-top: 0;
   margin-bottom: 6rem;
   color: #764384;
+  font-family: 'Holyfat', sans-serif;
 }
 
 .display-1 {
@@ -1569,7 +1570,7 @@ input::-moz-focus-inner {
 
 .section-intro::before {
   content: attr(data-num);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 600;
   font-size: 30rem;
   line-height: 1;
@@ -1741,13 +1742,12 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav-wrap {
   max-width: 1400px;
-  padding-left: 10px;
+  justify-content: center;
 }
 
 .header-nav {
-  margin-left: calc(17em - 200px) !important;
   list-style: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 700;
   font-size: 2.3rem;
   letter-spacing: 1px;
@@ -2585,8 +2585,8 @@ html.no-csstransitions .hero-content {
   display: block;
   background-image: linear-gradient(to bottom right, #8bdfb3, #358477);
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 40px;
+  bottom: 70px;
   right: 0;
   left: calc(50% + 12vw);
   -ms-transform: skewY(-10deg);
@@ -2639,7 +2639,7 @@ html.no-csstransitions .hero-content {
 }
 
 .position__header h6 {
-  font-family: "Martel", serif;
+  font-family: 'LemonMilklight', sans-serif;
   line-height: 2.8rem;
   margin-top: 0;
   margin-bottom: .4rem;
@@ -2825,7 +2825,7 @@ html.no-csstransitions .hero-content {
 .services-list__item-header h5::before {
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
   font-weight: 600;
   font-size: .5em;
   line-height: 1;
@@ -3433,6 +3433,15 @@ html.no-csstransitions .hero-content {
 .footer-contact-block__content,
 .footer-contact-block__list li {
   padding: .8rem 0;
+}
+
+.footer-contact-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-icon-item {
+  margin-right: 16px;
 }
 
 .footer-contact-block__list {

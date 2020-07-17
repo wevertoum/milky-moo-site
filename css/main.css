@@ -1556,7 +1556,7 @@ input::-moz-focus-inner {
 
 .section-intro {
   position: relative;
-  margin-bottom: 12rem;
+  margin-bottom: 6rem;
 }
 
 .section-intro .display-1 {
@@ -1607,7 +1607,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:600px) {
   .subhead {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 
   .display-1 {
@@ -3380,6 +3380,12 @@ html.no-csstransitions .hero-content {
   border-radius: 16px;
 }
 
+.iframe-box-align {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .s-footer {
   margin-top: 8em;
   padding-top: 10rem;
@@ -3395,7 +3401,7 @@ html.no-csstransitions .hero-content {
 .s-footer__bottom {
   font-family: "Gothic A1", sans-serif;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .s-footer .footer-email-us .btn:hover,
@@ -3457,6 +3463,11 @@ html.no-csstransitions .hero-content {
 .footer-contact-block__header {
   color: rgba(255, 255, 255, 0.4);
   margin: 0;
+}
+
+.image-icon-delivery {
+  width: 60px;
+  height: 25px !important;
 }
 
 /* ------------------------------------------------------------------- 

@@ -1894,7 +1894,6 @@ input::-moz-focus-inner {
   .header-nav-wrap {
     max-width: none;
     width: 100%;
-    padding-left: 13.2rem;
   }
 
   .header-content .btn {
@@ -2743,6 +2742,29 @@ html.no-csstransitions .hero-content {
   position: relative;
 }
 
+
+
+.s-franquias {
+  display: flex;
+  margin-top: 13em;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(#8bdfb3, #5fbcad);
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .s-franquias {
+    margin-top: 8em !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .s-franquias {
+    margin-top: 10em !important;
+  }
+}
+
 /* ===================================================================
  * # services section
  *
@@ -2763,6 +2785,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-services {
+  display: flex;
   margin-top: 7em;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -2772,6 +2795,7 @@ html.no-csstransitions .hero-content {
 
 .s-services__content {
   position: relative;
+  justify-content: center;
 }
 
 .s-services__leftcol {

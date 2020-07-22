@@ -515,7 +515,7 @@ dd {
 }
 
 /* ------------------------------------------------------------------- 
- * ## responsive video container
+ * ## responsive image
  * ------------------------------------------------------------------- */
 .image-franq-container {
   position: relative;
@@ -525,7 +525,8 @@ dd {
 }
 
 .image-franq-container img {
-  position: absolute;
+  /* tava absolute quando tinha a animaca */
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -545,11 +546,13 @@ dd {
   overflow: hidden;
 }
 
+/* animacao desativada por enquanto, ativar futuramente */
+
 .foto {
-  opacity: 0;
-  animation-name: animacao;
+  /* opacity: 0; */
+  /* animation-name: animacao;
   animation-duration: 20s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 @keyframes animacao {
@@ -563,7 +566,7 @@ dd {
   }
 }
 
-.foto:nth-child(1) {}
+/* .foto:nth-child(1) {}
 
 .foto:nth-child(2) {
   animation-delay: 5s;
@@ -575,7 +578,7 @@ dd {
 
 .foto:nth-child(4) {
   animation-delay: 15s;
-}
+} */
 
 
 
@@ -1546,7 +1549,7 @@ input::-moz-focus-inner {
   margin-top: 0;
   margin-bottom: 6rem;
   color: #764384;
-  font-family: 'Holyfat', sans-serif;
+  font-family: 'LemonMilklight', sans-serif;
 }
 
 .display-1 {

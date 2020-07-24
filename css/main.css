@@ -2757,12 +2757,15 @@ html.no-csstransitions .hero-content {
   padding-bottom: 10rem;
   background-image: linear-gradient(#8bdfb3, #5fbcad);
   position: relative;
-  margin-top: -40px !important;
 }
 
 @media screen and (max-width: 800px) {
   .s-franquias {
     margin-top: 1em !important;
+  }
+
+  .image-background-franquias {
+    padding-bottom: 13em !important;
   }
 }
 
@@ -2796,7 +2799,6 @@ html.no-csstransitions .hero-content {
 .image-background-franquias {
   width: 100%;
   position: absolute !important;
-  padding-bottom: 13em !important;
 }
 
 .gallery-content {

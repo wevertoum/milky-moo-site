@@ -3293,7 +3293,7 @@ html.no-csstransitions .hero-content {
 .testimonial-slider__author {
   min-height: 7.2rem;
   margin-top: 4rem;
-  padding-left: 4rem;
+  padding-left: 1rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -3337,7 +3337,12 @@ html.no-csstransitions .hero-content {
  * responsive:
  * lojas
  * ------------------------------------------------------------------- */
-@media screen and (max-width:800px) {}
+@media screen and (max-width:800px) {
+  .testimonial-slider__author {
+    padding-left: 4rem;
+  }
+
+}
 
 @media screen and (max-width:400px) {
   .testimonial-slider__author {

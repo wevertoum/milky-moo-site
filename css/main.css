@@ -2351,6 +2351,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1800px) {
   .hero-content h1 {
     font-size: 7rem;
+    margin-bottom: 1em;
   }
 
   .hero-content h1::before {
@@ -2382,6 +2383,7 @@ html.no-csstransitions .hero-content {
   .hero-content h1 {
     font-size: 7rem;
     padding-top: 3.2rem;
+    margin-bottom: 1em;
   }
 
   .hero-content h1::before {
@@ -2411,6 +2413,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1000px) {
   .hero-content h1 {
     font-size: 7rem;
+    margin-bottom: 1em;
   }
 
   .hero-social {
@@ -2754,11 +2757,12 @@ html.no-csstransitions .hero-content {
   padding-bottom: 10rem;
   background-image: linear-gradient(#8bdfb3, #5fbcad);
   position: relative;
+  margin-top: -40px !important;
 }
 
 @media screen and (max-width: 800px) {
   .s-franquias {
-    margin-top: 8em !important;
+    margin-top: 1em !important;
   }
 }
 
@@ -2781,6 +2785,18 @@ html.no-csstransitions .hero-content {
 .image-background-services {
   width: 100%;
   position: absolute !important;
+}
+
+.image-background-contain-franquias {
+  max-width: 100vw;
+  height: 100px;
+  bottom: 0;
+}
+
+.image-background-franquias {
+  width: 100%;
+  position: absolute !important;
+  padding-bottom: 13em !important;
 }
 
 .gallery-content {

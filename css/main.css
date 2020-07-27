@@ -1064,6 +1064,7 @@ input[type="button"].btn--primary {
   border-color: #764384;
   color: #ffffff;
   border-radius: 10px;
+  margin-bottom: 3em;
 }
 
 .btn.btn--primary:hover,
@@ -3455,6 +3456,10 @@ html.no-csstransitions .hero-content {
   font-family: "Gothic A1", sans-serif;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 2rem;
+}
+
+.footer-email-us {
+  border-radius: 16px;
 }
 
 .s-footer .footer-email-us .btn:hover,

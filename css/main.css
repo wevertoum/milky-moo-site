@@ -2086,8 +2086,14 @@ input::-moz-focus-inner {
   -webkit-box-align: end;
   align-items: flex-end;
   padding-top: 20vh;
-  padding-bottom: 14vh;
+  padding-bottom: 30vh;
   position: relative;
+}
+
+@media screen and (max-width:1700px) {
+  .hero-content {
+    padding-bottom: 7vh !important;
+  }
 }
 
 .hero-content h1 {

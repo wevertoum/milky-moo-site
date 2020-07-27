@@ -2100,17 +2100,6 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-.hero-content h1::before {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 8rem;
-  background-color: #764384;
-  position: absolute;
-  left: -10.8rem;
-  top: .55em;
-}
-
 /* -------------------------------------------------------------------
  * ## hero social
  * ------------------------------------------------------------------- */
@@ -2352,7 +2341,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1800px) {
   .hero-content h1 {
     font-size: 7rem;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
 
   .hero-content h1::before {
@@ -2384,7 +2373,7 @@ html.no-csstransitions .hero-content {
   .hero-content h1 {
     font-size: 7rem;
     padding-top: 3.2rem;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
 
   .hero-content h1::before {
@@ -2414,7 +2403,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1000px) {
   .hero-content h1 {
     font-size: 7rem;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
 
   .hero-social {

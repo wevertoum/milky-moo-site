@@ -349,7 +349,7 @@ html {
 }
 
 body {
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 1;
 	word-wrap: break-word;
 	-moz-font-smoothing: grayscale;
@@ -373,9 +373,7 @@ object {
 	height: 100% !important;
 }
 
-@media screen and (max-width:500px) {
-
-}
+@media screen and (max-width:500px) {}
 
 iframe {
 	height: 100%;
@@ -411,7 +409,10 @@ td {
 p {
 	font-size: inherit;
 	text-rendering: optimizeLegibility;
+	-webkit-text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 em,
 i {

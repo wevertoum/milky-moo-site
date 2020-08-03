@@ -2584,7 +2584,7 @@ html.no-csstransitions .hero-content {
 .s-sobrenos__section--profile::before {
   content: "";
   display: block;
-  background-image: linear-gradient(to bottom right, #8bdfb3, #358477);
+  background-color: #62ffcf;
   position: absolute;
   top: 40px;
   bottom: 70px;

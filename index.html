@@ -116,7 +116,9 @@
                         <img src="images/profile-pic.png" srcset="images/profile-pic.png 1x, images/profile-pic.png 2x"
                             alt="">
                     </div>
-                    <h3 class="subhead">Sobre </h3>
+                    <h3 style="display: none;" class="subhead">Sobre </h3>
+                    <img style="height: 85px; margin-bottom: 16px;" src="images/assets_content/sobre.png"
+                        srcset="images/assets_content/sobre.png 1x, images/assets_content/sobre.png 2x" alt="">
                     <p data-aos="fade-up">
                         A Milky Moo começou sua história em outubro de 2019, com três amigos que tinham um sonho em
                         comum: fazer o melhor milkshake do mundo!
@@ -139,16 +141,27 @@
         <div data-aos="fade-up" class="image-anim-container">
             <img id="anim-produtos" src="images/assets/image10@malhada.png">
         </div>
-        <div class="row s-services__content">
-            <div class="column large-12 s-services__leftcol">
-                <div class="section-intro" data-num="" data-aos="fade-up">
-                    <h3 class="subhead">Produtos</h3>
-                    <p data-aos="fade-up">
-                        São mais de 30 sabores dos nossos deliciosos milkshakes, difícil é escolher um só... Além dos
-                        nossos mimos pra colecionar e ter a Milky Moo sempre pertinho!
-                    </p>
+        <div style="display: flex; flex-direction: column;" class="row s-services__content">
+
+            <div class="section-intro row" data-num="" data-aos="fade-up">
+
+                <div class="row half-bottom hard-class-produtos">
+                    <div class="hard-class-text">
+                        <p data-aos="fade-up" style="font-size: 1.7em;">
+                            São mais de 30 sabores dos nossos deliciosos milkshakes, difícil é escolher um só... Além
+                            dos nossos mimos pra colecionar e ter a Milky Moo sempre pertinho!
+                        </p>
+
+                    </div>
+
+                    <div class="hard-class-image" class="column large-6 tab-full">
+                        <img class="milk-produtos" src="./images/assets_content/produtos.png" frameborder="0" />
+                    </div>
+
                 </div>
-            </div> <!-- end  s-services--leftcol -->
+
+            </div>
+
             <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse gallery-content">
                 <div class="column" data-aos="fade-up">
                     <div class="folio-item">
@@ -392,8 +405,7 @@
         </div>
         <div class="row half-bottom" style="justify-content: center; align-items: center;">
             <div class="column large-6 tab-full">
-                <h3 class="subhead">Seja um franqueado</h3>
-                <p data-aos="fade-up">
+                <p data-aos="fade-up" style="color: white;">
                     No mesmo mês da abertura da primeira loja, com inúmeros interesses em uma franquia Milky Moo,
                     decidimos que era hora de dar esse passo e entrar para o segmento. <br><br> Assim nasceu a Milky
                     Moo
@@ -411,17 +423,25 @@
             </div>
 
             <div class="column large-6 tab-full">
-                <div class="image-franq-container">
+                <div class="row content-frank">
 
-                    <div class="galeria">
-                        <img class="foto" src="./images/slider-show/5B.jpeg" width="500" height="281" frameborder="0" />
-                        <!-- <img class="foto" src="./images/slider-show/3B.png" width="500" height="281" frameborder="0" />
-                        <img class="foto" src="./images/slider-show/2A.png" width="500" height="281" frameborder="0" />
-                        <img class="foto" src="./images/slider-show/3B.png" width="500" height="281" frameborder="0" /> -->
-                    </div>
+                    <img class="milk-produtos" src="./images/assets_content/franquias.png" frameborder="0" />
+
                 </div>
-                <!-- se mexer aq tem q mexer na animation tb   -->
-                <!-- vou deixar a animacao estatica por enquanto   -->
+                <div class="row">
+                    <div class="image-franq-container">
+
+                        <div class="galeria">
+                            <img class="foto" src="./images/slider-show/5B.jpeg" width="500" height="281"
+                                frameborder="0" />
+                            <!-- <img class="foto" src="./images/slider-show/3B.png" width="500" height="281" frameborder="0" />
+                            <img class="foto" src="./images/slider-show/2A.png" width="500" height="281" frameborder="0" />
+                            <img class="foto" src="./images/slider-show/3B.png" width="500" height="281" frameborder="0" /> -->
+                        </div>
+                    </div>
+                    <!-- se mexer aq tem q mexer na animation tb   -->
+                    <!-- vou deixar a animacao estatica por enquanto   -->
+                </div>
             </div>
 
         </div>

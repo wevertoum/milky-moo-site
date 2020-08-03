@@ -2744,14 +2744,16 @@ html.no-csstransitions .hero-content {
   position: relative;
 }
 
-
+.content-frank {
+  justify-content: center;
+}
 
 .s-franquias {
   display: flex;
   margin-top: 13em;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-image: linear-gradient(#8bdfb3, #5fbcad);
+  background-color: #ff618e !important;
   position: relative;
 }
 
@@ -2795,6 +2797,7 @@ html.no-csstransitions .hero-content {
 .image-background-franquias {
   width: 100%;
   position: absolute !important;
+  margin-top: 4.5em;
 }
 
 .gallery-content {
@@ -2806,7 +2809,8 @@ html.no-csstransitions .hero-content {
   margin-top: 7em;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-image: linear-gradient(#8bdfb3, #5fbcad);
+  /* background-image: linear-gradient(#8bdfb3, #5fbcad); */
+  background-color: #62ffcf;
   position: relative;
 }
 
@@ -3001,6 +3005,49 @@ html.no-csstransitions .hero-content {
 /* ------------------------------------------------------------------- 
  * ## produtos list
  * ------------------------------------------------------------------- */
+
+
+.milk-produtos {
+  height: 400px;
+}
+
+.hard-class-produtos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.hard-class-text,
+.hard-class-image {
+  width: 50%;
+}
+
+.hard-class-text {
+  padding-top: 20px;
+}
+
+@media screen and (max-width:1150px) {
+  .hard-class-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hard-class-text {
+    width: 100%;
+    padding: 32px;
+    padding-top: 0;
+  }
+
+  .hard-class-image {
+    width: unset;
+  }
+
+  .milk-produtos {
+    height: 250px;
+  }
+}
+
 .folio-item {
   position: relative;
   overflow: hidden;
@@ -3196,7 +3243,6 @@ html.no-csstransitions .hero-content {
 .s-franquias,
 .s-contato {
   padding-top: 8rem;
-  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 

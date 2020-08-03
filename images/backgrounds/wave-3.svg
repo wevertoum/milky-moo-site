@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 226 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g transform="matrix(1,0,0,1,-57.6809,-82.9387)">
-        <g transform="matrix(0.156944,0,0,0.156944,170.681,108.05)">
-            <g transform="matrix(1,0,0,1,-720,-160)">
-                <path d="M0,256L48,229.3C96,203 192,149 288,154.7C384,160 480,224 576,218.7C672,213 768,139 864,128C960,117 1056,171 1152,197.3C1248,224 1344,224 1392,224L1440,224L1440,320L1392,320L48,320L0,320L0,256Z" style="fill:rgb(140,223,179);fill-rule:nonzero;"/>
-            </g>
+<svg width="100%" height="100%" viewBox="0 0 1440 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1.13687e-13,-0.0209437)">
+        <g transform="matrix(1,0,0,1,1.13687e-13,-126.521)">
+            <path d="M0,256L48,229.3C96,203 192,149 288,154.7C384,160 480,224 576,218.7C672,213 768,139 864,128C960,117 1056,171 1152,197.3C1248,224 1344,224 1392,224L1440,224L1440,320L1392,320L48,320L0,320L0,256Z" style="fill:rgb(255,97,142);fill-rule:nonzero;"/>
         </g>
     </g>
 </svg>

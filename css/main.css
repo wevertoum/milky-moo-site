@@ -2424,7 +2424,8 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:800px) {
   .hero-content img {
-    height: 110px;
+    height: 130px;
+    margin-bottom: 3em !important;
   }
 
   .hero-social {
@@ -2444,7 +2445,8 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:600px) {
   .hero-content img {
-    height: 90px;
+    height: 120px;
+    margin-bottom: 3em !important;
   }
 
 
@@ -2461,16 +2463,17 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:500px) {
   .hero-content img {
-    height: 80px;
+    height: 100px;
     padding-right: 0;
+    margin-bottom: 3em !important;
   }
 
 }
 
 @media screen and (max-width:400px) {
   .hero-content img {
-    height: 70px;
-    font-size: 4rem;
+    height: 95px;
+    margin-bottom: 3em !important;
   }
 
 }
@@ -2478,6 +2481,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:360px) {
   .hero-content img {
     height: 60px;
+    margin-bottom: 3em !important;
   }
 
 }

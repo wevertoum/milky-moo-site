@@ -2713,7 +2713,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:1054px) {
   .s-sobrenos__section--profile {
-    padding-top: 5rem;
+    padding-top: 0rem;
     padding-bottom: 0;
     min-height: 0;
   }

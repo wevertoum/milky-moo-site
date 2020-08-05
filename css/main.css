@@ -169,11 +169,6 @@ h6,
   text-rendering: optimizeLegibility;
 }
 
-.title-main {
-  font-family: 'LemonMilklight', sans-serif;
-  font-weight: 600 !important;
-  font-size: 7.6rem;
-}
 
 h1,
 .h1,
@@ -1887,6 +1882,19 @@ input::-moz-focus-inner {
   border-color: #764384 !important;
 }
 
+.title-images {
+  height: 85px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width:800px) {
+  .title-images {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * header
@@ -2097,13 +2105,9 @@ input::-moz-focus-inner {
   }
 }
 
-.hero-content h1 {
-  font-size: 7rem;
-  font-weight: 400;
-  line-height: 1.257;
-  padding-right: 3.2rem;
+.hero-content img {
+  height: 200px;
   margin-top: 0;
-  color: #ffffff;
   position: relative;
 }
 
@@ -2346,12 +2350,12 @@ html.no-csstransitions .hero-content {
  * hero
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1800px) {
-  .hero-content h1 {
-    font-size: 7rem;
+  .hero-content img {
+    height: 180px;
     margin-bottom: 3em;
   }
 
-  .hero-content h1::before {
+  .hero-content img::before {
     width: 7rem;
     left: -8.8rem;
   }
@@ -2377,13 +2381,12 @@ html.no-csstransitions .hero-content {
     max-width: 1200px;
   }
 
-  .hero-content h1 {
-    font-size: 7rem;
+  .hero-content img {
     padding-top: 3.2rem;
     margin-bottom: 3em;
   }
 
-  .hero-content h1::before {
+  .hero-content img::before {
     width: 6rem;
     top: 0;
     left: 0;
@@ -2408,9 +2411,9 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:1000px) {
-  .hero-content h1 {
-    font-size: 7rem;
+  .hero-content img {
     margin-bottom: 3em;
+    height: 140px;
   }
 
   .hero-social {
@@ -2420,8 +2423,8 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:800px) {
-  .hero-content h1 {
-    font-size: 4.8rem;
+  .hero-content img {
+    height: 110px;
   }
 
   .hero-social {
@@ -2440,13 +2443,11 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:600px) {
-  .hero-content h1 {
-    font-size: 4.6rem;
+  .hero-content img {
+    height: 90px;
   }
 
-  .hero-content h1 br {
-    display: none;
-  }
+
 
   .hero-social {
     font-size: 1rem;
@@ -2459,23 +2460,24 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:500px) {
-  .hero-content h1 {
-    font-size: 4.4rem;
+  .hero-content img {
+    height: 80px;
     padding-right: 0;
   }
 
 }
 
 @media screen and (max-width:400px) {
-  .hero-content h1 {
+  .hero-content img {
+    height: 70px;
     font-size: 4rem;
   }
 
 }
 
 @media screen and (max-width:360px) {
-  .hero-content h1 {
-    font-size: 3.8rem;
+  .hero-content img {
+    height: 60px;
   }
 
 }
@@ -3046,6 +3048,13 @@ html.no-csstransitions .hero-content {
 
   .milk-produtos {
     height: 250px;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .milk-produtos {
+    height: 200px;
   }
 }
 

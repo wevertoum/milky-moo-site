@@ -3017,6 +3017,11 @@ html.no-csstransitions .hero-content {
   height: 400px;
 }
 
+.milk-produtos-2 {
+  height: 400px;
+  padding-bottom: 32px;
+}
+
 .hard-class-produtos {
   display: flex;
   flex-direction: row;
@@ -3057,8 +3062,12 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:400px) {
 
   .milk-produtos {
-    height: unset;
+    height: 200px;
+  }
+
+  .milk-produtos-2 {
     width: 100%;
+    height: 100%;
   }
 }
 

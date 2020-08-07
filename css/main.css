@@ -2107,6 +2107,7 @@ input::-moz-focus-inner {
 .hero-content img {
   height: 200px;
   margin-top: 0;
+  margin-bottom: 10em;
   position: relative;
 }
 
@@ -2351,7 +2352,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1800px) {
   .hero-content img {
     height: 180px;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
   }
 
   .hero-content img::before {
@@ -2382,7 +2383,7 @@ html.no-csstransitions .hero-content {
 
   .hero-content img {
     padding-top: 3.2rem;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
   }
 
   .hero-content img::before {
@@ -2411,7 +2412,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:1000px) {
   .hero-content img {
-    margin-bottom: 10em;
+    margin-bottom: 17em;
     height: 140px;
   }
 

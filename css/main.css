@@ -2487,7 +2487,7 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width:1348px) {
-  #anim-produtos {
+  .image-anim-container {
     display: none;
   }
 }

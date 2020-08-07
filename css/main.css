@@ -3038,6 +3038,20 @@ html.no-csstransitions .hero-content {
   padding-top: 20px;
 }
 
+.hard-class-text p {
+  text-shadow: 1px 0 0 #000,
+    -1px 0 0 #000,
+    0 1px 0 #000,
+    0 -1px 0 #000,
+    1px 1px #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+  font-size: 1.7em;
+  letter-spacing: 0.5px;
+  color: #fe4b85;
+}
+
 @media screen and (max-width:1150px) {
   .hard-class-produtos {
     display: flex;

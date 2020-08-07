@@ -3048,8 +3048,8 @@ html.no-csstransitions .hero-content {
     1px -1px 0 #000,
     -1px 1px 0 #000;
   font-size: 1.7em;
-  letter-spacing: 0.5px;
-  color: #fe4b85;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 @media screen and (max-width:1150px) {

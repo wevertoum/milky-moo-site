@@ -2411,7 +2411,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:1000px) {
   .hero-content img {
-    margin-bottom: 3em;
+    margin-bottom: 10em;
     height: 140px;
   }
 
@@ -2424,7 +2424,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:800px) {
   .hero-content img {
     height: 130px;
-    margin-bottom: 10em !important;
+    margin-bottom: 17em !important;
   }
 
   .hero-social {
@@ -2445,7 +2445,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:600px) {
   .hero-content img {
     height: 120px;
-    margin-bottom: 10em !important;
+    margin-bottom: 17em !important;
   }
 
 
@@ -2464,7 +2464,7 @@ html.no-csstransitions .hero-content {
   .hero-content img {
     height: 100px;
     padding-right: 0;
-    margin-bottom: 10em !important;
+    margin-bottom: 17em !important;
   }
 
 }
@@ -2472,7 +2472,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:400px) {
   .hero-content img {
     height: 95px;
-    margin-bottom: 10em !important;
+    margin-bottom: 17em !important;
   }
 
 }
@@ -2480,7 +2480,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:360px) {
   .hero-content img {
     height: 60px;
-    margin-bottom: 10em !important;
+    margin-bottom: 17em !important;
   }
 
 }

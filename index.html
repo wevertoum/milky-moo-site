@@ -29,6 +29,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Ads: 824751425 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-824751425"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-824751425');
+    </script>
 </head>
 
 <body id="top">
@@ -590,7 +602,9 @@
         <div class="row s-footer__bottom">
             <div class="column large-full ss-copyright">
                 <span style="font-size: 13px;">© Copyright Milky Moo
-                    <script>document.write(new Date().getFullYear());</script></span>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script></span>
                 <span style="font-size: 13px;">Dev with <i style="color: red;" class="fas fa-heart"></i> by <a
                         href="http://weverton.me/">Weverton</a></span>
             </div> <!-- end ss-copyright -->
@@ -637,11 +651,11 @@
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                     <div class="pswp__share-tooltip"></div>
                 </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                    < </button>
-                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">></button>
-                        <div class="pswp__caption">
-                            <div class="pswp__caption__center"></div>
-                        </div>
+                    < </button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">>
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
 
         </div>
